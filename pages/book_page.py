@@ -39,7 +39,6 @@ class BookPage:
             browser.open('/my-books/liked/')
             browser.element('.ArtInfo_title__h_5Ay').should(have.text('Маленький принц'))
 
-
     def open_book_page(self):
         with allure.step('Открыть страницу с книгой'):
             browser.open('/book/antuan-de-sent-ekzuperi/malenkiy-princ-9815607/')
@@ -61,6 +60,16 @@ class BookPage:
     def check_deleted_book_from_cart(self):
         with allure.step('Проверка удаления книги из корзины'):
             browser.element('[data-testid="cart__emptyState--wrapper"]').should(have.text('Корзина пуста'))
+
+    def open_page_list_of_book(self):
+        with allure.step('Открыть страницу "Списки"'):
+            browser.open('/my-books/shelfs/')
+
+    def create_list_of_books(self, list_name):
+        with allure.step('Создание списка книг'):
+            browser.element('[data-testid="myBook__myFoldersCreate--button"]').click()
+            browser.element('[data-testid="myBooks__myFoldersModal--input"]').should(be.blank).type(list_name)
+            browser.element('[data-testid="myBooks__myFoldersModalSave--button"]').click()
 
 
 book_page = BookPage()

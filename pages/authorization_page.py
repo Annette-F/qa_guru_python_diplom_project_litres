@@ -42,12 +42,13 @@ class AuthorizationUserPage:
             browser.element('.ControlInput_input__error__0DtKl').should(have.text(text))
 
     def open_prolife_page(self):
-        with allure.step('Разлогин'):
+        with allure.step('Открыть профиль пользователя'):
             browser.element('[data-testid="authorization-popup__close-button"]').click()
             browser.element('[data-testid="header__profile-button"]').click()
 
     def logout_user(self):
-        browser.element('.Menu__exit_hEk0E').click()
+        with allure.step('Разлогин'):
+            browser.element('.Menu__exit_hEk0E').click()
 
     def check_logout(self):
         with allure.step('Проверка успешного разлогина'):

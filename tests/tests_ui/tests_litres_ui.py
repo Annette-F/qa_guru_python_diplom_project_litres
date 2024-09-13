@@ -4,7 +4,6 @@ from pages.authorization_page import authorization
 from pages.book_page import book_page
 
 
-
 @allure.tag('Web')
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Annette-F')
@@ -52,28 +51,6 @@ def test_logout():
     authorization.check_logout()
 
 
-# @allure.tag('Web')
-# @allure.severity(Severity.NORMAL)
-# @allure.label('owner', 'Annette-F')
-# @allure.feature('Редактирование профиля пользователя')
-# @allure.story('Профиль пользователя')
-# @allure.link('https://www.litres.ru', name='LitRes.ru')
-# def test_edit_personal_data():
-#     authorization_page.open()
-#     authorization_page.open_authorization_page()
-#     authorization_page.fill_email()
-#     authorization_page.fill_password()
-#     authorization_page.submit_authorization()
-#     authorization_page.open_prolife_page()
-#     edit_personal_data_page.open_page_about_me()
-# edit_personal_data_page.type_user_name('Мария Иванова')
-# edit_personal_data_page.type_birthday('20.04.2000')
-# edit_personal_data_page.confirm_agreement_form()
-# edit_personal_data_page.submit_edit_form()
-# edit_personal_data_page.check_successful_edit()
-# edit_personal_data_page.open_main_page()
-
-
 @allure.tag('Web')
 @allure.severity(Severity.NORMAL)
 @allure.label('owner', 'Annette-F')
@@ -111,6 +88,23 @@ def test_add_book_to_favorite():
     book_page.open_book_page()
     book_page.add_book_to_favorite()
     book_page.check_added_book_to_favorite()
+
+
+@allure.tag('Web')
+@allure.severity(Severity.NORMAL)
+@allure.label('owner', 'Annette-F')
+@allure.feature('Создание списка книг')
+@allure.story('Мои книги')
+@allure.link('https://www.litres.ru', name='LitRes.ru')
+def test_create_list_of_books():
+    authorization.open()
+    authorization.open_authorization_page()
+    authorization.fill_email()
+    authorization.fill_password()
+    authorization.submit_authorization()
+    authorization.open_prolife_page()
+    book_page.open_page_list_of_book()
+    book_page.create_list_of_books('Любимые книги')
 
 
 @allure.tag('Web')
