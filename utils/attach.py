@@ -1,6 +1,9 @@
 import allure
 from allure_commons.types import AttachmentType
-
+from selene import browser
+import requests
+import os
+import logging
 
 # Скриншоты
 def add_screenshot(browser):

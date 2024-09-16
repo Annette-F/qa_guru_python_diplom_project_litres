@@ -1,7 +1,7 @@
 from allure_commons.types import Severity
 import allure
-from pages.authorization_page import authorization
-from pages.book_page import book_page
+from pages.web_page.authorization_page import authorization
+from pages.web_page.book_page import book_page
 
 
 @allure.tag('Web')
