@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования онлайн-сервиса электронных и аудиокниг <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="150" heigth="150"/>
 
 
-## Содержание
+## :world_map: Содержание
 
 - [Технологии и инструменты](#octocat-технологии-и-инструменты)
 - [Список реализованных проверок в автотестах](#white_check_mark-список-реализованных-проверок-в-автотестах)
@@ -16,7 +16,7 @@
 #### <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="70" heigth="70"/> [Сайт онлайн-сервиса Litres](https://www.litres.ru/)
 
 
-## Цель проекта
+## :dart: Цель проекта
 
 Тестирование основных функций онлайн-сервиса, позволяющих пользователям пройти успешную авторизацию, найти интересующую книгу, добавить книгу в корзину, 
 добавить книгу в список отложенных книг. А также отсутствиии авторизации при неверно указанном пароле.
