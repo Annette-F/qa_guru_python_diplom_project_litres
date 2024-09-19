@@ -22,7 +22,7 @@
 добавить книгу в список отложенных книг. А также отсутствиии авторизации при неверно указанном пароле.
 
 
-## :octocat: Технологии и инструменты
+## :gear: Технологии и инструменты
 
 <p align="left">
 <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/python.svg" width="50" heigth="50"/>
@@ -81,7 +81,7 @@
 ## :bar_chart: Статистика запуска тест-планов и отчеты в Allure TestOps
 
 
-## :loudspeaker: Уведомление в Telegram о результатах прогона тестов с использованием бота
+## :email: Уведомление в Telegram о результатах прогона тестов с использованием бота
 
 Настроено автоматическое оповещение о результатах прохождения тестов в Telegram-бот с полной информацией о прогоне и ссылкой на Allure
 
