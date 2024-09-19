@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования онлайн-сервиса электронных и аудиокниг [Litres](https://www.litres.ru/)
+# Проект по автоматизации тестирования онлайн-сервиса электронных и аудиокниг [Litres](https://www.litres.ru/) <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="50" heigth="50"/>
 
 
 ## Содержание
