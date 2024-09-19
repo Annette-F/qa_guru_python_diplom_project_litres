@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования онлайн-сервиса электронных и аудиокниг <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="100" heigth="100"/>
+# Проект по автоматизации тестирования онлайн-сервиса электронных и аудиокниг <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="150" heigth="150"/>
 
 
 ## Содержание
@@ -13,7 +13,7 @@
 - Видео-отчет прохождения Mobile-автотеста
 
 
-#### <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="60" heigth="60"/> [Сайт онлайн-сервиса Litres](https://www.litres.ru/)
+#### <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/litres.svg" width="70" heigth="70"/> [Сайт онлайн-сервиса Litres](https://www.litres.ru/)
 
 
 ## Цель проекта
