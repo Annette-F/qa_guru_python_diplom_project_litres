@@ -31,8 +31,11 @@
 <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/pytest.svg" width="50" heigth="50"/>
 <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/github.svg" width="50" heigth="50"/>
 <img src="https://github.com/Annette-F/qa_guru_python_diplom_project_litres/blob/main/resources/images/AllureReport%20(1).png" height="50" width="50">
-<img src="https://github.com/Annette-F/qa_guru_python_hw_14_tutu/blob/main/resources/images/Selenoid.png" height="50" width="50">
-<img src="https://github.com/Annette-F/qa_guru_python_hw_14_tutu/blob/main/resources/images/selene.png" height="50" width="50">
+<img src="https://github.com/Annette-F/qa_guru_python_diplom_project_litres/blob/main/resources/images/AllureTestOps.png" height="50" width="50">
+<img src="https://github.com/Annette-F/qa_guru_python_diplom_project_litres/blob/main/resources/images/Selenoid%20(1).png" height="50" width="50">
+<img src="https://github.com/Annette-F/qa_guru_python_diplom_project_litres/blob/main/resources/images/selene%20(1).png" height="50" width="50">
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/browserstack.svg" width="50" heigth="50"/>
+<img src="https://github.com/Annette-F/qa_guru_python_diplom_project_litres/blob/main/resources/images/appium.png" width="50" heigth="50"/>
 <img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/Telegram.svg" width="50" heigth="50"/>
 </p>
 
