@@ -25,15 +25,15 @@
 ## :octocat: Технологии и инструменты
 
 <p align="left">
-<img src="https://raw.githubusercontent.com/Annette-F/Annette-F/main/icons/python.svg" width="50" heigth="50"/>
-<img src="https://raw.githubusercontent.com/Annette-F/Annette-F/main/icons/jenkins.svg" width="50" heigth="50"/>
-<img src="https://raw.githubusercontent.com/Annette-F/Annette-F/main/icons/pycharm.svg" width="50" heigth="50"/>
-<img src="https://raw.githubusercontent.com/Annette-F/Annette-F/main/icons/pytest.svg" width="50" heigth="50"/>
-<img src="https://raw.githubusercontent.com/Annette-F/Annette-F/main/icons/github.svg" width="50" heigth="50"/>
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/python.svg" width="50" heigth="50"/>
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/jenkins.svg" width="50" heigth="50"/>
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/pycharm.svg" width="50" heigth="50"/>
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/pytest.svg" width="50" heigth="50"/>
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/github.svg" width="50" heigth="50"/>
 <img src="https://github.com/Annette-F/qa_guru_python_hw_14_tutu/blob/main/resources/images/AllureReport.png" height="50" width="50">
 <img src="https://github.com/Annette-F/qa_guru_python_hw_14_tutu/blob/main/resources/images/Selenoid.png" height="50" width="50">
 <img src="https://github.com/Annette-F/qa_guru_python_hw_14_tutu/blob/main/resources/images/selene.png" height="50" width="50">
-<img src="https://raw.githubusercontent.com/Annette-F/Annette-F/main/icons/Telegram.svg" width="50" heigth="50"/>
+<img src="https://raw.githubusercontent.com/Annette-F/qa_guru_python_diplom_project_litres/refs/heads/main/resources/images/Telegram.svg" width="50" heigth="50"/>
 </p>
 
 
