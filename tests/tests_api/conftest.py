@@ -11,7 +11,7 @@ def load_env():
 
 @pytest.fixture(scope='function', autouse=True)
 def base_url(request):
-    browser.config.base_url = os.getenv('URL')
+    browser.config.base_url = os.getenv('URL_API')
 
     yield
 
