@@ -50,6 +50,8 @@ def api_put_to_wishlist(endpoint, **kwargs):
         result = requests.put(url=os.getenv('URL') + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
+        allure.attach(body=str(result.status_code), name='Status Code',
+                      attachment_type=AttachmentType.TEXT, extension='.txt')
         logging.info(result.request.url)
         logging.info(result.status_code)
     return result
@@ -59,6 +61,8 @@ def api_delete(endpoint, **kwargs):
     with allure.step('API Request'):
         result = requests.delete(url=os.getenv('URL') + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
+                      attachment_type=AttachmentType.TEXT, extension='.txt')
+        allure.attach(body=str(result.status_code), name='Status Code',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
         logging.info(result.request.url)
         logging.info(result.status_code)
