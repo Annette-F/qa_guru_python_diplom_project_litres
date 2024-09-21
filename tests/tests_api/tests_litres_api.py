@@ -118,8 +118,8 @@ def test_delete_book_from_wishlist():
 def test_authorization_with_invalid_password():
     endpoint = '/auth/login'
     headers = {'Content-Type': 'application/json'}
-    login = os.getenv('EMAIL')  #"marivtest@mail.ru"
-    password = os.getenv('WRONG_PASS')  #"zxcv1234"
+    login = os.getenv('EMAIL')
+    password = os.getenv('WRONG_PASS')
 
     with allure.step('Авторизация с неверно указанным паролем'):
         result = api_post(endpoint, headers=headers, json={'login': login, 'password': password})
