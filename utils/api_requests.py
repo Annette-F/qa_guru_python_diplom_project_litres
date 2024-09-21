@@ -8,7 +8,7 @@ from allure_commons.types import AttachmentType
 
 def api_get(endpoint, **kwargs):
     with allure.step('API Request'):
-        result = requests.get(url=os.getenv('URL_API') + endpoint, **kwargs)
+        result = requests.get(url='https://api.litres.ru/foundation/api/' + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
         allure.attach(body=json.dumps(result.json(), indent=4, ensure_ascii=True),
