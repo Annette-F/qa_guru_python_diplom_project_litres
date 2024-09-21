@@ -21,7 +21,7 @@ def api_get(endpoint, **kwargs):
 
 def api_post(endpoint, **kwargs):
     with allure.step('API Request'):
-        result = requests.post(url=os.getenv('URL_API') + endpoint, **kwargs)
+        result = requests.post(url='https://api.litres.ru/foundation/api/' + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
         allure.attach(body=json.dumps(result.json(), indent=4, ensure_ascii=True),
@@ -34,7 +34,7 @@ def api_post(endpoint, **kwargs):
 
 def api_put_to_cart(endpoint, **kwargs):
     with allure.step('API Request'):
-        result = requests.put(url=os.getenv('URL_API') + endpoint, **kwargs)
+        result = requests.put(url='https://api.litres.ru/foundation/api/' + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
         allure.attach(body=json.dumps(result.json(), indent=4, ensure_ascii=True),
@@ -47,7 +47,7 @@ def api_put_to_cart(endpoint, **kwargs):
 
 def api_put_to_wishlist(endpoint, **kwargs):
     with allure.step('API Request'):
-        result = requests.put(url=os.getenv('URL_API') + endpoint, **kwargs)
+        result = requests.put(url='https://api.litres.ru/foundation/api/' + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
         allure.attach(body=str(result.status_code), name='Status Code',
@@ -59,7 +59,7 @@ def api_put_to_wishlist(endpoint, **kwargs):
 
 def api_delete(endpoint, **kwargs):
     with allure.step('API Request'):
-        result = requests.delete(url=os.getenv('URL_API') + endpoint, **kwargs)
+        result = requests.delete(url='https://api.litres.ru/foundation/api/' + endpoint, **kwargs)
         allure.attach(body=result.request.method + ' ' + result.url, name='Request',
                       attachment_type=AttachmentType.TEXT, extension='.txt')
         allure.attach(body=str(result.status_code), name='Status Code',
