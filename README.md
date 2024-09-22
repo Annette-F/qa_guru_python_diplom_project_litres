@@ -137,5 +137,5 @@
 Пример видеозаписи выполнения теста.
 
 <p>
-<img title="Video" src="resources/video/videoUI.gif" alt="video">
+<img title="Video" src="resources/video/video.gif" alt="video">
 </p>
