@@ -134,8 +134,8 @@
 
 ## :movie_camera: Видео-отчет прохождения UI-автотеста на Selenoid
 
-Пример видеозаписи выполнения теста.
+Пример видеозаписи выполнения UI-теста.
 
 <p>
-<img title="Video" src="resources/video/video.gif" alt="video">
+<img title="Video" src="resources/video/videoUI.gif" alt="video">
 </p>
