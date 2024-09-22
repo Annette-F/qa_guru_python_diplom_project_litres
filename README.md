@@ -90,7 +90,9 @@
 
 ### Результат прогона API-тестов 
 
-
+<p>
+<img title="Telegram" src="resources/photo/Результат прогона API тестов в Telegram.png">
+</p>
 
 ## :movie_camera: Видео-отчет прохождения UI-автотеста на Selenoid
 
