@@ -98,7 +98,7 @@
 Общий результат прогона API-тестов
 
 <p>
-<img title="Общий результат прогона" src="resources/photo/общий рез-т прогона API.png">
+<img title="Общий результат прогона" src="resources/photo/общий отчет api.png">
 </p>
 
 Список API-тестов
