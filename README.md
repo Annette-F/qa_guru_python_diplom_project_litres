@@ -110,7 +110,7 @@
 Пример результата прохождения API-теста
 
 <p>
-<img title="Пример API теста" src="resources/photo/Отчет прохождения API теста.png">
+<img title="Пример API теста" src="resources/photo/отчет api.png">
 </p>
 
 ## :bar_chart: Статистика запуска тест-планов и отчеты в Allure TestOps
