@@ -10,15 +10,15 @@ from utils.api_requests import api_get, api_post, api_put_to_cart, api_put_to_wi
 @allure.tag('API')
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Annette-F')
-@allure.feature('Добавление книги в корзину')
-@allure.story('Корзина')
+@allure.feature('Adding a book to the cart')
+@allure.story('Cart')
 @allure.link('https://www.litres.ru', name='LitRes.ru')
 def test_add_book_to_cart():
     endpoint = '/cart/arts/add'
     headers = {'Content-Type': 'application/json'}
     art_ids = [9815607]
 
-    with allure.step('Добавление книги в корзину'):
+    with allure.step('Adding a book to the cart'):
         result = api_put_to_cart(endpoint, json={'art_ids': art_ids}, headers=headers)
 
     assert result.status_code == 200
@@ -32,8 +32,8 @@ def test_add_book_to_cart():
 @allure.tag('API')
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Annette-F')
-@allure.feature('Поиск печатной книги по названию и автору')
-@allure.story('Поиск')
+@allure.feature('Search for a printed book by title and author')
+@allure.story('Search')
 @allure.link('https://www.litres.ru', name='LitRes.ru')
 def test_search_book_by_title_and_author():
     endpoint = '/search'
@@ -41,7 +41,7 @@ def test_search_book_by_title_and_author():
     title = 'Маленький принц'
     full_name = 'Антуан де Сент-Экзюпери'
 
-    with allure.step('Поиск печатной книги по названию и автору'):
+    with allure.step('Search for a printed book by title and author'):
         result = api_get(endpoint, params={'q': title, 'types': types, 'full_name': full_name})
 
     assert result.status_code == 200
@@ -56,15 +56,15 @@ def test_search_book_by_title_and_author():
 @allure.tag('API')
 @allure.severity(Severity.NORMAL)
 @allure.label('owner', 'Annette-F')
-@allure.feature('Неуспешный поиск печатной книги по названию')
-@allure.story('Поиск')
+@allure.feature('Unsuccessful search for a printed book by title')
+@allure.story('Search')
 @allure.link('https://www.litres.ru', name='LitRes.ru')
 def test_unsuccessfull_search_book():
     endpoint = '/search'
     types = 'text_book'
     title = 'zxcvbnm'
 
-    with allure.step('Неуспешный поиск печатной книги по названию'):
+    with allure.step('Unsuccessful search for a printed book by title'):
         result = api_get(endpoint, params={'q': title, 'types': types})
 
     assert result.status_code == 200
@@ -78,14 +78,14 @@ def test_unsuccessfull_search_book():
 @allure.tag('API')
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Annette-F')
-@allure.feature('Добавление книги в "Отложенные"')
-@allure.story('Мои книги')
+@allure.feature('Adding the book to the "Wishlist"')
+@allure.story('My books')
 @allure.link('https://www.litres.ru', name='LitRes.ru')
 def test_add_book_to_wishlist():
     endpoint = '/wishlist/arts/'
     id_book = '9815607'
 
-    with allure.step('Добавление книги в "Отложенные"'):
+    with allure.step('Adding the book to the "Wishlist"'):
         result = api_put_to_wishlist(endpoint + id_book)
 
     assert result.status_code == 204
@@ -95,14 +95,14 @@ def test_add_book_to_wishlist():
 @allure.tag('API')
 @allure.severity(Severity.NORMAL)
 @allure.label('owner', 'Annette-F')
-@allure.feature('Удаление книги из "Отложенных"')
-@allure.story('Мои книги')
+@allure.feature('Removing the book from the "Wishlist"')
+@allure.story('My books')
 @allure.link('https://www.litres.ru', name='LitRes.ru')
 def test_delete_book_from_wishlist():
     endpoint = '/wishlist/arts/'
     id_book = '9815607'
 
-    with allure.step('Удаление книги из "Отложенных"'):
+    with allure.step('Removing the book from the "Wishlist"'):
         result = api_delete(endpoint + id_book)
 
     assert result.status_code == 204
@@ -112,8 +112,8 @@ def test_delete_book_from_wishlist():
 @allure.tag('API')
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Annette-F')
-@allure.feature('Авторизация с неверно указанным паролем')
-@allure.story('Авторизация')
+@allure.feature('Authorization with invalid password')
+@allure.story('Authorization')
 @allure.link('https://www.litres.ru', name='LitRes.ru')
 def test_authorization_with_invalid_password():
     endpoint = '/auth/login'
@@ -121,7 +121,7 @@ def test_authorization_with_invalid_password():
     login = os.getenv('EMAIL')
     password = os.getenv('WRONG_PASS')
 
-    with allure.step('Авторизация с неверно указанным паролем'):
+    with allure.step('Authorization with invalid password'):
         result = api_post(endpoint, headers=headers, json={'login': login, 'password': password})
 
     assert result.status_code == 401
