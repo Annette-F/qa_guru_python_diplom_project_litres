@@ -80,7 +80,7 @@
 Общий результат прогона UI-тестов
 
 <p>
-<img title="Общий результат прогона" src="resources/photo/общий прогон UI тестов.png">
+<img title="Общий результат прогона" src="resources/photo/общий отчет ui.png">
 </p>
 
 Список UI-тестов
@@ -92,7 +92,7 @@
 Пример результата прохождения UI-теста
 
 <p>
-<img title="Пример API теста" src="resources/photo/Отчет прохождения UI теста.png">
+<img title="Пример API теста" src="resources/photo/результат ui.png">
 </p>
 
 Общий результат прогона API-тестов
