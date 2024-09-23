@@ -138,7 +138,7 @@
 ### Пример результата прохождения API-теста
 
 <p>
-<img title="Пример API" src="resources/photo/результат api.pngg">
+<img title="Пример API" src="resources/photo/результат api.png">
 </p>
 
 
